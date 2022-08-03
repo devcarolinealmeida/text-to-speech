@@ -1,0 +1,77 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+    90deg, 
+    rgba(65, 184, 131, 1) 0%, 
+    rgba(0,212, 255, 1) 100%);
+}
+
+.container {
+    text-align: center;
+    padding: 2em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container > h3 {
+    margin-top: .5em;
+}
+
+select {
+    background-color: #ffff;
+    min-width: 260px;
+    min-height: 30%;
+    margin: 1em auto;
+}
+
+.button {
+    background-color: #41b883;
+    color: #ffff;
+    border: none;
+    padding: .7em;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: auto;
+    cursor: pointer;
+}
+
+.custom-text__container {
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    background-color: #ffff;
+    padding: 1.5em;
+    border-radius: 5px;
+    transform: translate(-5%, -800px);
+    transition: all 1s ease-in-out;
+}
+
+.custom-text__container.show {
+    transform: translate(-20%, 0);
+}
+
+.custom-text__container > textarea {
+    width: 100%;
+    height: 100px;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+.close {
+    float: right;
+    text-align: right;
+    cursor: pointer;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
