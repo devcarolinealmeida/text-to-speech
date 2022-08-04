@@ -1,4 +1,6 @@
 const chooseLanguage = document.querySelector("select")
+const enterText = document.querySelector("textarea")
+const convertSpeech = document.getElementById("convert-speech")
 
 let voices = []
 
@@ -13,3 +15,18 @@ speechSynthesis.addEventListener("voiceschanged", () => {
         chooseLanguage.appendChild(option)
     })
 })
+
+const speech = new SpeechSynthesisUtterance()
+const setText = text => {
+    speech.text = enterText.value
+}
+
+const speakText = () => {
+    speechSynthesis.speak(speech)
+}
+
+convertSpeech.addEventListener("click", () => {
+    setText(enterText.value)
+    speakText()
+})
+
