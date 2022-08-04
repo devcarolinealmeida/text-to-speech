@@ -30,3 +30,10 @@ convertSpeech.addEventListener("click", () => {
     speakText()
 })
 
+const selectVoice = event => {
+    const choseVoice = voices.find(voice => voice.name === event.target.value)
+    speech.voice = choseVoice
+    console.log(choseVoice)
+}
+
+chooseLanguage.addEventListener("change", selectVoice)
