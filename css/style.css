@@ -49,15 +49,6 @@ select {
     padding: 1.5em;
     border-radius: 5px;
     margin: 1em auto;
-    /* position: absolute;
-    top: 30%;
-    left: 20%;
-    transform: translate(-5%, -800px);
-    transition: all 1s ease-in-out; */
-}
-
-.custom-text__container.show {
-    transform: translate(-20%, 0);
 }
 
 .custom-text__container > textarea {
@@ -78,4 +69,22 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
+}
+
+@media screen and (max-width: 414px) {
+    select {
+        min-width: 80vw;
+    }
+    .custom-text__container {
+        width: 80vw; 
+    }
+}
+
+@media screen and (max-width: 914px) {
+    select {
+        min-width: 60vw;
+    }
+    .custom-text__container {
+        width: 60vw; 
+    }
 }
