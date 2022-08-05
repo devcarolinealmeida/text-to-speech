@@ -7,6 +7,7 @@ let voices
 
 function loadVoices() {
     voices = synth.getVoices();
+    console.log(voices)
     voices.forEach(({ name, lang }) => {
         const option = document.createElement("option")
 
@@ -51,7 +52,7 @@ chooseLanguage.addEventListener("change", selectVoice)
 //-------------
 
 
-// //resolucao Roger Melo (nao carrega select no safari)
+// DOES NOT WORK IN safari)
 // const chooseLanguage = document.querySelector("select")
 // const enterText = document.querySelector("textarea")
 // const convertSpeech = document.getElementById("convert-speech")

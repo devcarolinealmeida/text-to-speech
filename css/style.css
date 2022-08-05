@@ -32,6 +32,10 @@ select {
     border-radius: 5px;
 }
 
+select > option {
+    text-align: center;
+}
+
 .button {
     background-color: #41b883;
     color: #ffff;
