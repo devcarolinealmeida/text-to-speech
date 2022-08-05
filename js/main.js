@@ -1,13 +1,12 @@
 const chooseLanguage = document.querySelector("select")
 const enterText = document.querySelector("textarea")
 const convertSpeech = document.getElementById("convert-speech")
-const synth = window.speechSynthesis;
+const synth = speechSynthesis;
 
 let voices
 
 function loadVoices() {
     voices = synth.getVoices();
-    console.log(voices)
     voices.forEach(({ name, lang }) => {
         const option = document.createElement("option")
 
