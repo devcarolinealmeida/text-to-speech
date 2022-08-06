@@ -35,6 +35,7 @@ const speakText = () => {
 }
 
 convertSpeech.addEventListener("click", () => {
+    speech.lang = 'en-US';
     setText(enterText.value)
     speakText()
 })
