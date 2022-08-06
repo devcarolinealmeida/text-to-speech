@@ -46,6 +46,9 @@ const selectVoice = event => {
 
 chooseLanguage.addEventListener("change", selectVoice)
 
+//------------
+// add box-images
+
 
 
 //-------------
