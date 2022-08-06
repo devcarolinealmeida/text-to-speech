@@ -3,6 +3,7 @@ const enterText = document.querySelector("textarea")
 const convertSpeech = document.getElementById("convert-speech")
 const synth = speechSynthesis;
 
+
 let voices
 
 function loadVoices() {
@@ -25,8 +26,8 @@ if ('onvoiceschanged' in synth) {
 
 
 const speech = new SpeechSynthesisUtterance()
-const setText = text => {
-    speech.text = enterText.value
+function setText(text){
+    speech.text = text
 }
 
 const speakText = () => {
@@ -37,6 +38,7 @@ convertSpeech.addEventListener("click", () => {
     setText(enterText.value)
     speakText()
 })
+
 
 const selectVoice = event => {
     const choseVoice = voices.find(voice => voice.name === event.target.value)
@@ -71,6 +73,13 @@ function createExpressionsBox(expressions) {
     div.classList.add("expression-box")
     div.innerHTML = `<img src="${expressions.img}" alt="${expressions.text}"> 
     <p class="info">${expressions.text}</p>`
+
+    div.addEventListener("click", () => {
+        setText(expressions.text)
+        speech.lang = 'en-US';
+        speakText()
+    })
+
     main.appendChild(div)
 }
 
