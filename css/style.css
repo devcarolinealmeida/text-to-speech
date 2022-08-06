@@ -91,15 +91,19 @@ main {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    background: #ffff;
-    padding-bottom: .5em;
+    overflow: hidden;
 }
-
 
 .expression-box img {
     width: 100%;
     object-fit: cover;
     height: 20vh;
+}
+
+.info {
+    align-items: center; 
+    background: #ffff;
+    padding: .5em;
 }
 
 
@@ -111,13 +115,20 @@ main {
     .custom-text__container {
         width: 80vw; 
     }
+    main {
+        grid-template-columns: 1fr;
+        margin-top: 1em;
+    }
 }
 
-@media screen and (max-width: 914px) {
+@media screen and (min-width: 415px) and (max-width: 820px) {
     select {
         min-width: 60vw;
     }
     .custom-text__container {
         width: 60vw; 
+    }
+    main {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

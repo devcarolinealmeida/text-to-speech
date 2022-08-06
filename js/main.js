@@ -69,8 +69,8 @@ const expressions = [
 function createExpressionsBox(expressions) {
     const div = document.createElement("div")
     div.classList.add("expression-box")
-    div.innerHTML = `<img src="${expressions.img}" alt="${expressions.text}" 
-    <p>${expressions.text}</p`
+    div.innerHTML = `<img src="${expressions.img}" alt="${expressions.text}"> 
+    <p class="info">${expressions.text}</p>`
     main.appendChild(div)
 }
 
