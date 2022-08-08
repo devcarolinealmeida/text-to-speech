@@ -55,18 +55,18 @@ chooseLanguage.addEventListener("change", selectVoice)
 const main = document.querySelector("main")
 
 const expressions = [
-    { img: "../img/angry.jpg", text: "I'm angry" },
-    { img: "../img/drink.jpg", text: "I'm thirsty" },
-    { img: "../img/food.jpg", text: "I'm hungry" },
-    { img: "../img/happy.jpg", text: "I'm happy" },
-    { img: "../img/home.jpg", text: "I want to go home" },
-    { img: "../img/hurt.jpg", text: "I'm hurt" },
-    { img: "../img/outside.jpg", text: "I want to go outside" },
-    { img: "./img/sad.jpg", text: "I'm sad" },
-    { img: "./img/scared.jpg", text: "I'm scared" },
-    { img: "./img/tired.jpg", text: "I'm tired" },
-    { img: "./img/school.jpg", text: "I want to go to school" },
-    { img: "./img/grandma.jpg", text: "I want to see grandma"}
+    { img: "/assets/img/angry.jpg", text: "I'm angry" },
+    { img: "/assets/img/drink.jpg", text: "I'm thirsty" },
+    { img: "/assets/img/food.jpg", text: "I'm hungry" },
+    { img: "/assets/img/happy.jpg", text: "I'm happy" },
+    { img: "/assets/img/home.jpg", text: "I want to go home" },
+    { img: "/assets/img/hurt.jpg", text: "I'm hurt" },
+    { img: "/assets/img/outside.jpg", text: "I want to go outside" },
+    { img: "/assets/img/sad.jpg", text: "I'm sad" },
+    { img: "/assets/img/scared.jpg", text: "I'm scared" },
+    { img: "/assets/img/tired.jpg", text: "I'm tired" },
+    { img: "/assets/img/school.jpg", text: "I want to go to school" },
+    { img: "/assets/img/grandma.jpg", text: "I want to see grandma"}
 ]
 
 function createExpressionsBox(expressions) {
