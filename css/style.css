@@ -70,12 +70,6 @@ select > option {
     cursor: pointer;
 }
 
-main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1em;
-}
-
 
 /* ----- box images ------ */
 
