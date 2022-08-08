@@ -33,4 +33,4 @@
 Solution URL: https://dev-caroline-text-to-speech.netlify.app/
 
 # Author
-Caroline Almeida -> [LinkedIn](www.linkedin.com/in/devcaroline)
+Caroline Almeida -> [LinkedIn](https://www.linkedin.com/in/devcaroline)
