@@ -105,7 +105,8 @@ main {
 
 @media screen and (max-width: 414px) {
     select {
-        min-width: 80vw;
+        display: none;
+        /* min-width: 80vw; */
     }
     .custom-text__container {
         width: 80vw; 
